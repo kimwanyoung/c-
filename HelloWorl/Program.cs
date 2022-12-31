@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Hello, World!");
+﻿/*
+Console.WriteLine("Hello, World!");
 
 
 // ==== 단원 과제1 ====
@@ -28,3 +29,22 @@ foreach (var item in items)
         Console.WriteLine(item);
     }
 }
+*/
+
+string[] stringArr = { "wan", "12", "young", "154", "13" };
+int sum = 0;
+string name = "";
+foreach(string value in stringArr)
+{
+    if (int.TryParse(value, out int result)) 
+    {
+        sum += result;
+    }
+    else
+    {
+        name += value;
+    }
+}
+
+Console.WriteLine(name);
+Console.WriteLine(sum);
